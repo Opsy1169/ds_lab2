@@ -34,6 +34,7 @@ def read_data_from_file():
         splitted_line = line.split()
         protein.append(float(splitted_line[9]))
         oil.append(float(splitted_line[10]))
+    file.close()
     return np.array(protein), np.array(oil)
 
 
